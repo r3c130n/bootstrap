@@ -155,6 +155,7 @@
   }
   // Take these values and mixins, and make 'em do their thang
   .generate(@gridColumns, @gridColumnWidth, @gridGutterWidth) {
+
     // Row surrounds the columns
     .row {
       margin-left: @gridGutterWidth * -1;
@@ -165,6 +166,7 @@
       #gridSystem > .gridColumn(@gridGutterWidth);
     }
     // Default columns
+
     .span1     { #gridSystem > .columns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 1); }
     .span2     { #gridSystem > .columns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 2); }
     .span3     { #gridSystem > .columns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 3); }
@@ -215,6 +217,7 @@
     .offset22  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 22); }
     .offset23  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 23); }
     .offset24  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 24); }
+
   }
 }
 
